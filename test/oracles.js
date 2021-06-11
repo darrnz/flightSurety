@@ -1,4 +1,3 @@
-
 var Test = require('../config/testConfig.js');
 //var BigNumber = require('bignumber.js');
 
@@ -37,7 +36,7 @@ contract('Oracles', async (accounts) => {
     
     // ARRANGE
     let flight = 'ND1309'; // Course number
-    let timestamp = Math.floor(Date.now() / 1000);
+    let timestamp = "2019-06-15";
 
     // Submit a request for oracles to get status information for a flight
     await config.flightSuretyApp.fetchFlightStatus(config.firstAirline, flight, timestamp);
@@ -60,7 +59,7 @@ contract('Oracles', async (accounts) => {
         }
         catch(e) {
           // Enable this when debugging
-           console.log('\nError', idx, oracleIndexes[idx].toNumber(), flight, timestamp);
+            console.log('\nError', idx, oracleIndexes[idx].toNumber(), flight, timestamp);
         }
 
       }

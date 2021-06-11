@@ -13,7 +13,9 @@ module.exports = {
   },
   compilers: {
     solc: {
-      version: "^0.4.24"
+      version: "^0.4.25"
     }
   }
 };
+
+//ganache-cli -a 50 -l 99999999 -m "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"
